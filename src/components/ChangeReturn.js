@@ -16,31 +16,45 @@ const ChangeReturn = ({ change }) => {
       set2000(Math.floor(change / 2000));
       change = change % 2000;
       console.log(noOf2000);
+    }else{
+      set2000(0)
     }
     if (change >= 500) {
       set500(Math.floor(change / 500));
       change = change % 500;
+    }else{
+      set500(0)
     }
     if (change >= 100) {
       set100(Math.floor(change / 100));
       change = change % 100;
+    }else{
+      set100(0)
     }
     if (change >= 50) {
       set50(Math.floor(change / 50));
       change = change % 50;
+    }else{
+      set50(0)
     }
     if (change >= 20) {
       set20(Math.floor(change / 20));
       change = change % 20;
+    }else{
+      set20(0)
     }
     if (change >= 10) {
       set10(Math.floor(change / 10));
       change = change % 10;
+    }else{
+      set10(0)
     }
     if (change < 10) {
-      set1(change);
+      set1(parseInt(change));
+    }else{
+      set2000(0)
     }
-  }, [change]);
+  }, [change, noOf2000, noOf500, noOf100, noOf50, noOf20, noOf10, noOf1]);
   console.log(noOf2000, noOf500, noOf100, noOf50, noOf20, noOf10, noOf1);
 
   return (

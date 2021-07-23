@@ -11,7 +11,10 @@ function Home() {
 
 
   const handleOnChange = (e) => {
-    setAmount(e.target.value);
+    setAmount(e.target.value)
+    if(flag){
+      checkAmount()
+    }
   };
 
   const handleNext = () => {
