@@ -7,6 +7,7 @@ function Home() {
   const [flag2, setFlag2] = useState(false);
   const [totalAmount, setTotalAmountnt] = useState("");
   const [change, setChnage]= useState("")
+  const [empty, setEmpty] = useState(false)
 
 
   const handleOnChange = (e) => {
@@ -14,21 +15,25 @@ function Home() {
   };
 
   const handleNext = () => {
-    if (amount !== undefined || amount !== null || amount !== "") setFlag(true);
-    else {
-      console.log("hello");
+    if (!amount) {
+      setEmpty(true)
+    }else{
+      setFlag(true);
+      setEmpty(false)
     }
+
   };
 
   const checkAmount=()=>{
     setFlag2(true)
+    setEmpty(false)
     let returningValue = totalAmount - amount;
     setChnage(returningValue);
   }
 
   return (
     <div className="container">
-      <div class="heading">
+      <div className="heading">
         <h2>Cash Register Manager</h2>
         <p>Enter the bill amount and cash given by the customer and know minimum number of notes to return</p>
       </div>
@@ -57,6 +62,7 @@ function Home() {
 
       <div>
       {flag2 && <ChangeReturn change={change}/>}
+      {empty && <h2>PLease, Enter the bill Amount!</h2>}
       </div>
     </div>
   );
