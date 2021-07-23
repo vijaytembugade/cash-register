@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/cash-register/static/css/main.cdcbdcc5.chunk.css",
-    "main.js": "/cash-register/static/js/main.01f40db4.chunk.js",
-    "main.js.map": "/cash-register/static/js/main.01f40db4.chunk.js.map",
+    "main.css": "/cash-register/static/css/main.afe38582.chunk.css",
+    "main.js": "/cash-register/static/js/main.87c19103.chunk.js",
+    "main.js.map": "/cash-register/static/js/main.87c19103.chunk.js.map",
     "runtime-main.js": "/cash-register/static/js/runtime-main.f0f23262.js",
     "runtime-main.js.map": "/cash-register/static/js/runtime-main.f0f23262.js.map",
     "static/js/2.d3dde09f.chunk.js": "/cash-register/static/js/2.d3dde09f.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.c277c350.chunk.js": "/cash-register/static/js/3.c277c350.chunk.js",
     "static/js/3.c277c350.chunk.js.map": "/cash-register/static/js/3.c277c350.chunk.js.map",
     "index.html": "/cash-register/index.html",
-    "static/css/main.cdcbdcc5.chunk.css.map": "/cash-register/static/css/main.cdcbdcc5.chunk.css.map",
+    "static/css/main.afe38582.chunk.css.map": "/cash-register/static/css/main.afe38582.chunk.css.map",
     "static/js/2.d3dde09f.chunk.js.LICENSE.txt": "/cash-register/static/js/2.d3dde09f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.f0f23262.js",
     "static/js/2.d3dde09f.chunk.js",
-    "static/css/main.cdcbdcc5.chunk.css",
-    "static/js/main.01f40db4.chunk.js"
+    "static/css/main.afe38582.chunk.css",
+    "static/js/main.87c19103.chunk.js"
   ]
 }
