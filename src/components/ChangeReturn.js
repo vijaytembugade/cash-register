@@ -2,13 +2,13 @@ import React, { useEffect, useState } from "react";
 
 const ChangeReturn = ({ change }) => {
   // const [notes , setNotes] = useState({})
-  const [noOf2000, set2000] = useState(0);
-  const [noOf500, set500] = useState(0);
-  const [noOf100, set100] = useState(0);
-  const [noOf50, set50] = useState(0);
-  const [noOf20, set20] = useState(0);
-  const [noOf10, set10] = useState(0);
-  const [noOf1, set1] = useState(0);
+  const [noOf2000, set2000] = useState();
+  const [noOf500, set500] = useState();
+  const [noOf100, set100] = useState();
+  const [noOf50, set50] = useState();
+  const [noOf20, set20] = useState();
+  const [noOf10, set10] = useState();
+  const [noOf1, set1] = useState();
 
   useEffect(() => {
     console.log(change);
@@ -17,42 +17,42 @@ const ChangeReturn = ({ change }) => {
       change = change % 2000;
       console.log(noOf2000);
     }else{
-      set2000(0)
+      set2000()
     }
     if (change >= 500) {
       set500(Math.floor(change / 500));
       change = change % 500;
     }else{
-      set500(0)
+      set500()
     }
     if (change >= 100) {
       set100(Math.floor(change / 100));
       change = change % 100;
     }else{
-      set100(0)
+      set100()
     }
     if (change >= 50) {
       set50(Math.floor(change / 50));
       change = change % 50;
     }else{
-      set50(0)
+      set50()
     }
     if (change >= 20) {
       set20(Math.floor(change / 20));
       change = change % 20;
     }else{
-      set20(0)
+      set20()
     }
     if (change >= 10) {
       set10(Math.floor(change / 10));
       change = change % 10;
     }else{
-      set10(0)
+      set10()
     }
     if (change < 10) {
       set1(parseInt(change));
     }else{
-      set2000(0)
+      set1()
     }
   }, [change, noOf2000, noOf500, noOf100, noOf50, noOf20, noOf10, noOf1]);
   console.log(noOf2000, noOf500, noOf100, noOf50, noOf20, noOf10, noOf1);
