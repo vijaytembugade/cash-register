@@ -49,7 +49,7 @@ const ChangeReturn = ({ change }) => {
     }else{
       set10()
     }
-    if (change < 10) {
+    if (change < 10 && change > 0) {
       set1(parseInt(change));
     }else{
       set1()
