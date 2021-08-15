@@ -5,7 +5,7 @@ const ChangeReturn = ({ change }) => {
   const [noOf2000, set2000] = useState();
   const [noOf500, set500] = useState();
   const [noOf100, set100] = useState();
-  const [noOf50, set50] = useState();
+  const [noOf5, set5] = useState();
   const [noOf20, set20] = useState();
   const [noOf10, set10] = useState();
   const [noOf1, set1] = useState();
@@ -31,12 +31,7 @@ const ChangeReturn = ({ change }) => {
     }else{
       set100()
     }
-    if (change >= 50) {
-      set50(Math.floor(change / 50));
-      change = change % 50;
-    }else{
-      set50()
-    }
+
     if (change >= 20) {
       set20(Math.floor(change / 20));
       change = change % 20;
@@ -48,6 +43,12 @@ const ChangeReturn = ({ change }) => {
       change = change % 10;
     }else{
       set10()
+    }
+    if (change >= 5) {
+      set5(Math.floor(change / 5));
+      change = change % 5;
+    }else{
+      set5()
     }
     if (change < 10 && change > 0) {
       set1(parseInt(change));
