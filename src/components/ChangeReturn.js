@@ -55,8 +55,8 @@ const ChangeReturn = ({ change }) => {
     }else{
       set1()
     }
-  }, [change, noOf2000, noOf500, noOf100, noOf50, noOf20, noOf10, noOf1]);
-  console.log(noOf2000, noOf500, noOf100, noOf50, noOf20, noOf10, noOf1);
+  }, [change]);
+  console.log(noOf2000, noOf500, noOf100, noOf5, noOf20, noOf10, noOf1);
 
   return (
     <div>
@@ -76,9 +76,9 @@ const ChangeReturn = ({ change }) => {
               <th>2000</th>
               <th>500</th>
               <th>100</th>
-              <th>50</th>
               <th>20</th>
               <th>10</th>
+              <th>5</th>
               <th>1</th>
             </tr>
             <tr>
@@ -86,9 +86,9 @@ const ChangeReturn = ({ change }) => {
               <th>{noOf2000}</th>
               <th>{noOf500}</th>
               <th>{noOf100}</th>
-              <th>{noOf50}</th>
               <th>{noOf20}</th>
               <th>{noOf10}</th>
+              <th>{noOf5}</th>
               <th>{noOf1}</th>
             </tr>
           </table>
